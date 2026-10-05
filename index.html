@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nawal Ai Nurrahman: Desainer Multimedia &amp; Konten Kreator</title>
+  <meta name="description" content="Portofolio Nawal Ai Nurrahman, mahasiswa D4 Teknologi Rekayasa Multimedia Grafis Politeknik Haji Anwar Sanusi. Fokus pada desain grafis, editing video, animasi 2D, dan media sosial.">
+  <meta name="keywords" content="Nawal Ai Nurrahman, Multimedia Designer, UI/UX, 2D Animation, Video Editor, Content Creator, Portfolio, Politeknik Haji Anwar Sanusi">
+  <meta property="og:title" content="Nawal Ai Nurrahman: Desainer Multimedia &amp; Konten Kreator">
+  <meta property="og:description" content="Portofolio visual dan arsip karya desain multimedia, animasi 2D, dan konten digital.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="lime" data-mode="dark">
+
+  <!-- Accessibility Skip Link (WCAG 2.4.1) -->
+  <a href="#work" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- Welcome Animation Curtain / Intro Screen -->
+  <div class="welcome-screen" id="welcomeScreen" aria-label="Intro Layar Selamat Datang">
+    <div class="welcome-bg-glow"></div>
+    <div class="welcome-container">
+      <div class="welcome-logo-wrap">
+        <svg class="welcome-logo-svg" width="68" height="68" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="36" height="36" rx="10" fill="rgba(255, 255, 255, 0.05)" stroke="var(--glass-border)" stroke-width="1.2"/>
+          <path class="welcome-path-n" d="M12 28V12L24 28V12" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle class="welcome-dot" cx="28" cy="12" r="2.4" fill="var(--accent)"/>
+        </svg>
+      </div>
+
+      <div class="welcome-text-wrap">
+        <h2 class="welcome-name">NAWAL AI NURRAHMAN</h2>
+        <div class="welcome-tag">
+          <span class="g_eyebrow_marker"></span>
+          <span>MULTIMEDIA • MOTION • DESIGN</span>
+        </div>
+      </div>
+
+      <div class="welcome-progress-wrap">
+        <div class="welcome-progress-bar" id="welcomeProgress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Magnetic Cursor (Non-touch devices) -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- Background Ambient Subtle Canvas -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-mesh"></div>
+  </div>
+
+  <!-- Progressive Blur Scrims (Lanterne Signature) -->
+  <div class="progressive-blur-top" aria-hidden="true"></div>
+  <div class="progressive-blur-bottom" aria-hidden="true"></div>
+
+  <!-- Floating Glass Navigation Header -->
+  <header class="nav-wrapper">
+    <nav class="nav-bar-glass" aria-label="Navigasi Utama">
+      <a href="#hero" class="nav-brand" aria-label="Beranda Nawal Ai Nurrahman">
+        <!-- Custom Vector Geometric Logo -->
+        <svg class="nav-brand-logo-svg" width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="33" height="33" rx="9" fill="rgba(255, 255, 255, 0.05)" stroke="var(--glass-border)" stroke-width="1.2"/>
+          <path d="M10 25.5V10.5L22 25.5V10.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="26" cy="11.5" r="2.4" fill="var(--accent)"/>
+        </svg>
+        <span>NAWAL AI N.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#work" class="nav-link active"><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span>Karya</span></a></li>
+        <li><a href="#lab" class="nav-link"><i class="fa-solid fa-clapperboard" aria-hidden="true"></i><span>Animasi</span></a></li>
+        <li><a href="#about" class="nav-link"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Profil</span></a></li>
+        <li><a href="#experience" class="nav-link"><i class="fa-solid fa-compass" aria-hidden="true"></i><span>Pengalaman</span></a></li>
+        <li><a href="#skills" class="nav-link"><i class="fa-solid fa-medal" aria-hidden="true"></i><span>Keahlian</span></a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Mode Switcher (Dark Studio vs Editorial Paper Light) -->
+        <button class="btn-glass-icon" id="themeModeToggle" type="button" aria-label="Ganti mode tampilan terang atau gelap" title="Ubah Mode Terang/Gelap">
+          <i class="fa-solid fa-moon" id="themeModeIcon" aria-hidden="true"></i>
+        </button>
+
+        <!-- Lanterne Color Accent Switcher -->
+        <div class="theme-picker" role="group" aria-label="Pilih Aksen Warna">
+          <button class="theme-dot active" data-set-theme="lime" type="button" aria-label="Aksen Lime"></button>
+          <button class="theme-dot" data-set-theme="red" type="button" aria-label="Aksen Merah"></button>
+          <button class="theme-dot" data-set-theme="purple" type="button" aria-label="Aksen Ungu"></button>
+          <button class="theme-dot" data-set-theme="cyan" type="button" aria-label="Aksen Cyan"></button>
+        </div>
+
+        <button class="btn-glass-icon" id="openCvBtn" type="button" aria-label="Buka Curriculum Vitae" title="Lihat CV">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+        </button>
+
+        <a href="#contact" class="btn-glass-icon btn-accent" aria-label="Hubungi Kontak" title="Hubungi Kontak">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+        </a>
+
+        <button class="mobile-nav-toggle" id="mobileMenuBtn" type="button" aria-label="Buka Menu Navigasi Mobile" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true">
+    <a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house" aria-hidden="true"></i> Beranda</a>
+    <a href="#work" class="mobile-nav-link"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Karya Pilihan</a>
+    <a href="#lab" class="mobile-nav-link"><i class="fa-solid fa-clapperboard" aria-hidden="true"></i> Lab Animasi</a>
+    <a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user" aria-hidden="true"></i> Profil Saya</a>
+    <a href="#experience" class="mobile-nav-link"><i class="fa-solid fa-compass" aria-hidden="true"></i> Pengalaman &amp; Organisasi</a>
+    <a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-medal" aria-hidden="true"></i> Keahlian &amp; Prestasi</a>
+    <a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Kontak</a>
+    <button class="btn-glass-pill" id="mobileCvBtn" type="button" style="margin-top: 16px;"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Buka Ringkasan CV</button>
+  </div>
+
+  <main>
+    <!-- =======================================================================
+         HERO SECTION
+         ======================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-beacon-dot" aria-hidden="true"></span>
+              <span>Terbuka untuk Magang &amp; Kerja Sama Proyek</span>
+            </div>
+
+            <h1 class="hero-title">
+              Nawal Ai<br>
+              <span class="text-outline">Nurrahman</span>
+            </h1>
+
+            <div class="editorial-tag">
+              <span class="g_eyebrow_marker"></span>
+              <span>Desain Grafis • Editing Video • Konten Sosial Media</span>
+            </div>
+
+            <p class="hero-lead">
+              Mahasiswa D4 Teknologi Rekayasa Multimedia Grafis di Politeknik Haji Anwar Sanusi. Berfokus pada <strong>desain visual komunikatif, editing video promosi</strong>, dan <strong>pengelolaan konten media sosial</strong>. Berdomisili di Bandung Barat.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#work" class="btn-glass-pill">
+                <span>Lihat Karya Pilihan</span>
+              </a>
+              <button class="btn-glass-outline" id="heroCvBtn" type="button">
+                <span>Buka CV Lengkap</span>
+              </button>
+              <a href="#contact" class="btn-glass-outline">
+                <span>Hubungi Saya</span>
+              </a>
+            </div>
+
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <h3>D4 TRMG</h3>
+                <p>Politeknik HAS</p>
+              </div>
+              <div class="stat-item">
+                <h3>10+</h3>
+                <p>Tugas Animasi 2D</p>
+              </div>
+              <div class="stat-item">
+                <h3>5x</h3>
+                <p>Juara Taekwondo</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Glass Visual Card with Nawal's Portrait -->
+          <div class="hero-visual-card">
+            <div class="hero-image-frame">
+              <img src="assets/images/profile.png" alt="Foto Profil Nawal Ai Nurrahman" class="hero-profile-img">
+            </div>
+
+            <div class="card-floating-badge">
+              <div class="card-badge-info">
+                <h4>Nawal Ai Nurrahman</h4>
+                <p>Multimedia Grafis • Bandung Barat</p>
+              </div>
+              <div class="card-badge-icon" title="Kreator Terverifikasi" aria-hidden="true">
+                ★
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SELECTED WORK (LANTERNE ASYMMETRIC GRID)
+         ======================================================================= -->
+    <section class="section" id="work">
+      <div class="container">
+        <!-- Lanterne Editorial Split Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-header-left">
+            <div class="editorial-tag section-eyebrow">
+              <span class="g_eyebrow_marker"></span>
+              <span>01 / Portofolio Proyek</span>
+            </div>
+            <h2 class="title-left">Karya</h2>
+          </div>
+          <div class="section-header-right">
+            <h2 class="title-right">Pilihan</h2>
+          </div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="work-filters" role="group" aria-label="Filter kategori proyek">
+          <button class="filter-btn active" data-filter="all" type="button">Semua Proyek</button>
+          <button class="filter-btn" data-filter="uiux" type="button">UI/UX Design</button>
+          <button class="filter-btn" data-filter="motion" type="button">Motion Graphic</button>
+          <button class="filter-btn" data-filter="animation" type="button">Animasi 2D</button>
+          <button class="filter-btn" data-filter="sosmed" type="button">Media Sosial &amp; Konten</button>
+          <button class="filter-btn" data-filter="branding" type="button">Branding &amp; UMKM</button>
+        </div>
+
+        <!-- Empty state fallback if no projects match -->
+        <div class="empty-projects-state" id="emptyProjectsState" style="display: none;" role="status">
+          <p>Belum ada karya pada kategori ini.</p>
+          <button class="btn-glass-pill" id="resetFilterBtn" type="button">Tampilkan Semua Proyek</button>
+        </div>
+
+        <!-- Lanterne Asymmetric 2-Column Staggered Grid -->
+        <div class="lanterne-projects-grid" id="projectsGrid">
+          
+          <!-- LEFT COLUMN (Wide & Editorial) -->
+          <div class="lanterne-col-left">
+
+            <!-- PROJECT 1: W-COFFEE MOBILE APP (UI/UX) -->
+            <article class="project-card" data-category="uiux" data-project-id="w-coffee" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Buka studi kasus W-Coffee: Desain Aplikasi Mobile Coffee Shop" data-scroll-blur>
+              <div class="project-media-wrap ratio-tall">
+                <img src="assets/images/w-coffee.png" alt="Desain UI Aplikasi Mobile W-Coffee" class="project-img">
+                <div class="video-preview-badge">STUDI KASUS UI/UX</div>
+              </div>
+              <div class="project-meta-row">
+                <div class="project-tags">
+                  <span class="project-tag-pill">UI/UX Design</span>
+                  <span class="project-tag-pill">Figma</span>
+                  <span class="project-tag-pill">Mobile App</span>
+                </div>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">
+                <span>W-Coffee: Desain Aplikasi Mobile Coffee Shop</span>
+              </h3>
+              <p class="project-desc-short">
+                Desain antarmuka aplikasi pemesanan kopi berbasis mobile yang dirancang di Figma. Menyusun struktur kartu menu yang rapi, opsi kustomisasi minuman, serta alur checkout yang ringkas untuk pembeli.
+              </p>
+            </article>
+
+            <!-- PROJECT 2: DESA WISATA CILANANG (BRANDING & TOURISM) -->
+            <article class="project-card" data-category="branding" data-project-id="cilanang" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Buka studi kasus Desa Wisata Cilanang: Promosi & Kemasan UMKM" data-scroll-blur>
+              <div class="project-media-wrap ratio-cinema">
+                <img src="assets/images/cilanang.jpg" alt="Identitas Visual dan Media Promosi Desa Wisata Cilanang" class="project-img">
+                <div class="video-preview-badge">BRANDING &amp; KETUA TIM</div>
+              </div>
+              <div class="project-meta-row">
+                <div class="project-tags">
+                  <span class="project-tag-pill">Branding UMKM</span>
+                  <span class="project-tag-pill">Desain Stiker</span>
+                  <span class="project-tag-pill">Video Dokumentasi</span>
+                </div>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">
+                <span>Desa Wisata Cilanang: Promosi &amp; Kemasan UMKM</span>
+              </h3>
+              <p class="project-desc-short">
+                Menjadi ketua tim promosi dalam program pengabdian dan penguatan potensi Desa Cilanang, Bandung Barat. Mendesain stiker kemasan produk UMKM lokal, spanduk wisata desa, serta memproduksi video dokumentasi kegiatan.
+              </p>
+            </article>
+
+          </div>
+
+          <!-- RIGHT COLUMN (Compact & Staggered Lanterne Rhythm) -->
+          <div class="lanterne-col-right">
+
+            <!-- PROJECT 3: 3D MOTION GRAPHIC -->
+            <article class="project-card" data-category="motion" data-project-id="motion-graphic" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Buka studi kasus 3D Motion Graphic: Visualisasi Gerak & Ruang 3D" data-scroll-blur>
+              <div class="project-media-wrap ratio-cinema">
+                <video src="assets/videos/3d_motion.mp4" autoplay loop muted playsinline class="project-img"></video>
+                <div class="video-preview-badge">3D MOTION GRAPHIC</div>
+              </div>
+              <div class="project-meta-row">
+                <div class="project-tags">
+                  <span class="project-tag-pill">Motion Graphic</span>
+                  <span class="project-tag-pill">3D Animation</span>
+                  <span class="project-tag-pill">VFX</span>
+                </div>
+                <span class="project-year">2025–2026</span>
+              </div>
+              <h3 class="project-title">
+                <span>3D Motion Graphic: Visualisasi Gerak &amp; Ruang 3D</span>
+              </h3>
+              <p class="project-desc-short">
+                Eksplorasi animasi gerak 3D dengan penekanan pada sudut pandang kamera sinematik, kurva akselerasi gerak, dan interaksi pencahayaan material.
+              </p>
+            </article>
+
+            <!-- PROJECT 4: PT ALFAHIRA MEDIANA SENTOSA (SOCIAL MEDIA & CONTENT) -->
+            <article class="project-card" data-category="sosmed" data-project-id="alfahira" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Buka studi kasus PT Alfahira: Manajemen Konten & Video Iklan" data-scroll-blur>
+              <div class="project-media-wrap ratio-tall">
+                <img src="assets/images/sosmed/Screenshot_2026-09-22-16-08-14-496_com.instagram.android.jpg" alt="Dokumentasi Manajemen Media Sosial PT Alfahira" class="project-img">
+                <div class="video-preview-badge">8 BUKTI DOKUMENTASI</div>
+              </div>
+              <div class="project-meta-row">
+                <div class="project-tags">
+                  <span class="project-tag-pill">Media Sosial</span>
+                  <span class="project-tag-pill">TikTok Affiliate</span>
+                  <span class="project-tag-pill">Video Iklan</span>
+                </div>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">
+                <span>PT Alfahira: Manajemen Konten &amp; Video Iklan</span>
+              </h3>
+              <p class="project-desc-short">
+                Pengalaman magang dalam mengelola akun media sosial kursus bahasa, memproduksi konten video TikTok affiliate, serta mengedit materi video promosi dan penggalangan dana digital.
+              </p>
+            </article>
+
+            <!-- PROJECT 5: 2D ANIMATION STUDIES & PRINCIPLES -->
+            <article class="project-card" data-category="animation" data-project-id="animation-series" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Buka studi kasus Praktik Animasi 2D: Studi Gerak & Efek Visual" data-scroll-blur>
+              <div class="project-media-wrap ratio-cinema">
+                <video src="assets/videos/tugas_2_follow_through.mp4" autoplay loop muted playsinline class="project-img"></video>
+                <div class="video-preview-badge">10 TUGAS VIDEO</div>
+              </div>
+              <div class="project-meta-row">
+                <div class="project-tags">
+                  <span class="project-tag-pill">Animasi 2D</span>
+                  <span class="project-tag-pill">Prinsip Fisika Gerak</span>
+                  <span class="project-tag-pill">Walk Cycles</span>
+                </div>
+                <span class="project-year">2024–2025</span>
+              </div>
+              <h3 class="project-title">
+                <span>Praktik Animasi 2D: Studi Gerak &amp; Efek Visual</span>
+              </h3>
+              <p class="project-desc-short">
+                Rangkaian tugas animasi frame-by-frame: prinsip squash &amp; stretch pada bola pantul, follow through ekor, partikel api dan asap, percikan air, rotoscoping, siklus gerak jalan, dan lip-sync dialog karakter.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+        <!-- ===================================================================
+             2D ANIMATION LAB REEL (INTERACTIVE PLAYABLE PREVIEWS)
+             =================================================================== -->
+        <div class="animation-reel-wrap" id="lab" data-scroll-blur>
+          <div class="reel-header">
+            <div>
+              <div class="editorial-tag">
+                <span class="g_eyebrow_marker"></span>
+                <span>Laboratorium Animasi 2D</span>
+              </div>
+              <h3 style="font-size: 2rem; margin-top: 6px;">Kumpulan Tugas Gerak Frame-By-Frame</h3>
+            </div>
+            <p style="color: var(--text-secondary); max-width: 480px; font-size: 0.9rem;">
+              Klik salah satu video untuk memutar dengan kontrol penuh dan melihat fokus teknik yang dipelajari.
+            </p>
+          </div>
+
+          <div class="video-grid-preview">
+            
+            <div class="video-card-item" data-video-src="assets/videos/3d_motion.mp4" data-video-title="3D Motion Graphic: Eksplorasi Gerak & Ruang 3D" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video 3D Motion Graphic: Eksplorasi Gerak dan Ruang 3D">
+              <video src="assets/videos/3d_motion.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>3D Motion Graphic</h5>
+                <span>Kamera Sinematik &amp; Ruang 3D</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_1_bola_pantul_final.mp4" data-video-title="Tugas 1: Bola Pantul (Squash & Stretch)" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 1: Bola Pantul Squash dan Stretch">
+              <video src="assets/videos/tugas_1_bola_pantul_final.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Bola Pantul (Final)</h5>
+                <span>Squash, Stretch &amp; Spacing Frame</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_2_follow_through.mp4" data-video-title="Tugas 2: Follow Through & Overlapping Action" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 2: Follow Through dan Overlapping Action">
+              <video src="assets/videos/tugas_2_follow_through.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Follow Through</h5>
+                <span>Gerak Inersia Bandul / Ekor</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_3_fire_&_smoke.mp4" data-video-title="Tugas 3: Efek Visual Api & Asap" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 3: Efek Visual Api dan Asap">
+              <video src="assets/videos/tugas_3_fire_&_smoke.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Efek Api &amp; Asap</h5>
+                <span>Disipasi Partikel Organik</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_3_water.mp4" data-video-title="Tugas 3: Efek Visual Percikan Air" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 3: Efek Visual Percikan Air">
+              <video src="assets/videos/tugas_3_water.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Percikan Air</h5>
+                <span>Dinamika Cairan &amp; Riak</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_4_rotoscoping.mp4" data-video-title="Tugas 4: Rotoscoping Aksi Nyata" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 4: Rotoscoping Aksi Nyata">
+              <video src="assets/videos/tugas_4_rotoscoping.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Rotoscoping</h5>
+                <span>Tracing Gerak Frame-by-Frame</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_5_locomotive_homan_walk.mp4" data-video-title="Tugas 5: Siklus Jalan Manusia (Bipedal)" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 5: Siklus Jalan Manusia">
+              <video src="assets/videos/tugas_5_locomotive_homan_walk.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Jalan Manusia</h5>
+                <span>Kontak Kaki, Passing &amp; Bobot</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_5_locomotive_dog_walk.mp4" data-video-title="Tugas 5: Siklus Jalan Anjing (Quadruped)" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 5: Siklus Jalan Anjing">
+              <video src="assets/videos/tugas_5_locomotive_dog_walk.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Jalan Anjing</h5>
+                <span>Gait Hewan Berkaki Empat</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_5_locomotive_flying_bird.mp4" data-video-title="Tugas 5: Gerak Terbang Burung" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 5: Gerak Terbang Burung">
+              <video src="assets/videos/tugas_5_locomotive_flying_bird.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Terbang Burung</h5>
+                <span>Kepakan Sayap &amp; Kurva Gerak</span>
+              </div>
+            </div>
+
+            <div class="video-card-item" data-video-src="assets/videos/tugas_6_berbicara.mp4" data-video-title="Tugas 6: Lip Sync Karakter & Dialog" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Putar video Tugas 6: Lip Sync Karakter dan Dialog">
+              <video src="assets/videos/tugas_6_berbicara.mp4" muted loop playsinline></video>
+              <div class="video-overlay-info">
+                <h5>Lip Sync Karakter</h5>
+                <span>Sinkronisasi Bentuk Mulut &amp; Suara</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         ABOUT SECTION
+         ======================================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <!-- Lanterne Editorial Split Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-header-left">
+            <div class="editorial-tag section-eyebrow">
+              <span class="g_eyebrow_marker"></span>
+              <span>02 / Pendekatan &amp; Profil</span>
+            </div>
+            <h2 class="title-left">Tentang</h2>
+          </div>
+          <div class="section-header-right">
+            <h2 class="title-right">Nawal</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <p class="about-editorial-statement">
+              "Bagi saya, desain dan video bukan sekadar menyusun tampilan visual yang rapi, melainkan <strong>menyampaikan pesan dengan lugas, fungsional, dan relevan</strong> bagi yang melihatnya."
+            </p>
+
+            <div class="about-details-list">
+              <div class="about-detail-item">
+                <span class="detail-number">01</span>
+                <div class="detail-text">
+                  <h4>Latar Belakang Akademik</h4>
+                  <p>Mahasiswa aktif D4 <strong>Teknologi Rekayasa Multimedia Grafis</strong> di Politeknik Haji Anwar Sanusi (2024 - Sekarang). Mempelajari alur produksi audio-visual, desain grafis, animasi 2D, dan antarmuka aplikasi.</p>
+                </div>
+              </div>
+
+              <div class="about-detail-item">
+                <span class="detail-number">02</span>
+                <div class="detail-text">
+                  <h4>Praktek Lapangan &amp; Konten Digital</h4>
+                  <p>Terbiasa menangani kebutuhan visual nyata: mulai dari kemasan UMKM dan spanduk wisata desa, materi feed Instagram kampus, video affiliate TikTok, hingga prototype mobile app di Figma.</p>
+                </div>
+              </div>
+
+              <div class="about-detail-item">
+                <span class="detail-number">03</span>
+                <div class="detail-text">
+                  <h4>Kedisiplinan &amp; Pengalaman Organisasi</h4>
+                  <p>Sebagai peraih 5 medali kejuaraan Taekwondo serta mantan Ketua OSIS dan Sekretaris Umum BEM, saya terbiasa dengan ritme kerja teratur, komunikasi yang jelas, dan kerja sama tim yang solid.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual-wrap" data-scroll-blur>
+            <div class="about-inner-frame">
+              <img src="assets/images/cilanang.jpg" alt="Dokumentasi Desain Nawal Ai Nurrahman">
+            </div>
+            <div style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <h5 style="font-size: 1.05rem;">Desain Multimedia Fungsional</h5>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); font-family: var(--font-mono);">Politeknik HAS • Bandung Barat</p>
+              </div>
+              <button class="btn-glass-pill" id="openCvAboutBtn" type="button">Buka CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         JOURNEY & EXPERIENCE SECTION
+         ======================================================================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <!-- Lanterne Editorial Split Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-header-left">
+            <div class="editorial-tag section-eyebrow">
+              <span class="g_eyebrow_marker"></span>
+              <span>03 / Pengalaman Kerja &amp; Organisasi</span>
+            </div>
+            <h2 class="title-left">Pengalaman &amp;</h2>
+          </div>
+          <div class="section-header-right">
+            <h2 class="title-right">Organisasi</h2>
+          </div>
+        </div>
+
+        <div class="timeline-grid">
+          
+          <!-- PROFESSIONAL & PROJECT EXPERIENCE -->
+          <div class="timeline-column">
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px; color: var(--accent);">Magang &amp; Proyek Lapangan</h3>
+
+            <div class="timeline-card" data-scroll-blur>
+              <span class="timeline-badge">Agustus 2026 - September 2026</span>
+              <h4>PT Alfahira Mediana Sentosa</h4>
+              <p class="company">Intern, Social Media &amp; Content</p>
+              <ul>
+                <li>Mengelola akun media sosial kursus bahasa untuk kebutuhan branding dan interaksi audiens.</li>
+                <li>Mengelola akun TikTok untuk pemasaran affiliate dan pengenalan program.</li>
+                <li>Melakukan editing video iklan dan materi video promosi penggalangan dana digital.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card" data-scroll-blur>
+              <span class="timeline-badge">Juli - Agustus 2025</span>
+              <h4>Pengembangan Desa Wisata Cilanang</h4>
+              <p class="company">Ketua Tim Promosi (Bandung Barat)</p>
+              <ul>
+                <li>Memimpin tim promosi dalam program pengembangan dan branding UMKM desa wisata.</li>
+                <li>Merancang media promosi seperti stiker label kemasan dan spanduk UMKM lokal.</li>
+                <li>Mengambil dan mengedit video dokumentasi kegiatan dan potensi wisata desa.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card" data-scroll-blur>
+              <span class="timeline-badge">2024 - Sekarang</span>
+              <h4>Politeknik Haji Anwar Sanusi</h4>
+              <p class="company">D4 Teknologi Rekayasa Multimedia Grafis</p>
+              <ul>
+                <li>Fokus studi pada desain grafis, antarmuka aplikasi (UI/UX), animasi 2D, dan produksi audio visual.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ORGANIZATIONAL & LEADERSHIP EXPERIENCE -->
+          <div class="timeline-column">
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px; color: var(--accent);">Organisasi &amp; Kepemimpinan</h3>
+
+            <div class="timeline-card" data-scroll-blur>
+              <span class="timeline-badge">Januari 2025 - Mei 2026</span>
+              <h4>BEM Politeknik Haji Anwar Sanusi</h4>
+              <p class="company">Sekretaris Umum</p>
+              <ul>
+                <li>Mengelola surat menyurat, pengarsipan, dan administrasi organisasi mahasiswa.</li>
+                <li>Membuat notulen rapat kepengurusan dan laporan pertanggungjawaban kegiatan.</li>
+                <li>Mengatur agenda serta koordinasi kerja antarbidang dalam organisasi.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card" data-scroll-blur>
+              <span class="timeline-badge">Februari 2025 - Juli 2026</span>
+              <h4>Kominfo Politeknik HAS</h4>
+              <p class="company">Tim Desain &amp; Publikasi</p>
+              <ul>
+                <li>Mendesain materi publikasi digital kampus: poster acara, feed, dan story Instagram.</li>
+                <li>Membuat aset visual pendukung untuk berbagai kegiatan dan pengumuman resmi kampus.</li>
+                <li>Berkolaborasi dengan tim konten dalam penyampaian informasi kemahasiswaan.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card" data-scroll-blur>
+              <span class="timeline-badge">Agustus 2021 - Juni 2022</span>
+              <h4>OSIS SMAS Harapan Cipongkor</h4>
+              <p class="company">Ketua OSIS</p>
+              <ul>
+                <li>Memimpin dan mengoordinasikan kegiatan kesiswaan OSIS selama satu periode kepengurusan.</li>
+                <li>Menyusun program kerja bersama pengurus dan guru pembina.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card" data-scroll-blur>
+              <span class="timeline-badge">September 2019 - Sekarang</span>
+              <h4>Club Taekwondo Cipongkor</h4>
+              <p class="company">Asisten Pelatih</p>
+              <ul>
+                <li>Membantu pelatih dalam memandu sesi latihan fisik dan teknik dasar bagi anggota baru.</li>
+                <li>Mendampingi atlet binaan dalam ujian kenaikan sabuk dan kejuaraan daerah.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SKILLS & ATHLETIC ACHIEVEMENTS
+         ======================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <!-- Lanterne Editorial Split Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-header-left">
+            <div class="editorial-tag section-eyebrow">
+              <span class="g_eyebrow_marker"></span>
+              <span>04 / Kemampuan &amp; Penghargaan</span>
+            </div>
+            <h2 class="title-left">Keahlian &amp;</h2>
+          </div>
+          <div class="section-header-right">
+            <h2 class="title-right">Prestasi</h2>
+          </div>
+        </div>
+
+        <div class="skills-prestasi-grid">
+          
+          <!-- CREATIVE TOOLKIT & SKILLS -->
+          <div class="glass-box" data-scroll-blur>
+            <h3 style="font-size: 1.6rem; margin-bottom: 24px;">Perangkat &amp; Kemampuan</h3>
+
+            <div class="skill-category-group">
+              <div class="skill-cat-title">
+                <span class="g_eyebrow_marker"></span>
+                <span>Desain Grafis &amp; UI Mobile</span>
+              </div>
+              <div class="skill-pill-tags">
+                <span class="skill-pill">Figma (UI Mobile)</span>
+                <span class="skill-pill">Adobe Photoshop</span>
+                <span class="skill-pill">CorelDRAW</span>
+                <span class="skill-pill">Canva Pro</span>
+                <span class="skill-pill">Tata Letak &amp; Tipografi</span>
+                <span class="skill-pill">Stiker Kemasan UMKM</span>
+              </div>
+            </div>
+
+            <div class="skill-category-group">
+              <div class="skill-cat-title">
+                <span class="g_eyebrow_marker"></span>
+                <span>Editing Video &amp; Animasi</span>
+              </div>
+              <div class="skill-pill-tags">
+                <span class="skill-pill">Adobe Premiere Pro</span>
+                <span class="skill-pill">CapCut Mobile / PC</span>
+                <span class="skill-pill">Animasi 2D Frame-by-Frame</span>
+                <span class="skill-pill">Rotoscoping</span>
+                <span class="skill-pill">Sinkronisasi Audio &amp; Voiceover</span>
+              </div>
+            </div>
+
+            <div class="skill-category-group">
+              <div class="skill-cat-title">
+                <span class="g_eyebrow_marker"></span>
+                <span>Fotografi &amp; Manajemen Aset</span>
+              </div>
+              <div class="skill-pill-tags">
+                <span class="skill-pill">Kamera DSLR &amp; HP</span>
+                <span class="skill-pill">Komposisi &amp; Pencahayaan</span>
+                <span class="skill-pill">Adobe Lightroom</span>
+                <span class="skill-pill">Google Workspace &amp; MS Office</span>
+              </div>
+            </div>
+
+            <div class="skill-category-group">
+              <div class="skill-cat-title">
+                <span class="g_eyebrow_marker"></span>
+                <span>Sertifikasi &amp; Pelatihan</span>
+              </div>
+              <div class="skill-pill-tags">
+                <span class="skill-pill">Sertifikat Magang PT Alfahira (2026)</span>
+                <span class="skill-pill">Editor Video FFPI (2025)</span>
+                <span class="skill-pill">Editor Festival Kampus Berdampak (2025)</span>
+                <span class="skill-pill">Micro Mentor Digital Marketing Research</span>
+                <span class="skill-pill">DIGIMON Cakrawala Univ (2024 &amp; 2025)</span>
+                <span class="skill-pill">Keamanan Siber untuk UMKM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ATHLETIC ACHIEVEMENTS (TAEKWONDO PRESTASI) -->
+          <div class="glass-box" data-scroll-blur>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 24px;">
+              <h3 style="font-size: 1.6rem;">Prestasi Olahraga</h3>
+              <span class="editorial-tag">Atlet Taekwondo</span>
+            </div>
+
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px;">
+              Aktivitas di cabang olahraga bela diri Taekwondo melatih ketahanan fisik, fokus tinggi, kedisiplinan kerja, dan konsistensi dalam menyelesaikan setiap tanggung jawab.
+            </p>
+
+            <div class="achievement-list">
+              
+              <div class="achievement-card">
+                <div class="achieve-rank">JUARA 1</div>
+                <div class="achieve-title">
+                  <h5>Ganda Campuran</h5>
+                  <p>Pekan Olahraga Mahasiswa Poltekhas</p>
+                </div>
+                <div class="achieve-year">2025</div>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achieve-rank">JUARA 2</div>
+                <div class="achieve-title">
+                  <h5>Senior Putri U-46</h5>
+                  <p>Surya Arena Cup 1</p>
+                </div>
+                <div class="achieve-year">2024</div>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achieve-rank">JUARA 3</div>
+                <div class="achieve-title">
+                  <h5>Senior Individu Putri</h5>
+                  <p>Piala Bupati Bandung Barat</p>
+                </div>
+                <div class="achieve-year">2023</div>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achieve-rank">JUARA 1</div>
+                <div class="achieve-title">
+                  <h5>Individu Pemula Putri</h5>
+                  <p>Piala Ketua Pengcab TI KBB</p>
+                </div>
+                <div class="achieve-year">2022</div>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achieve-rank">JUARA 1</div>
+                <div class="achieve-title">
+                  <h5>Kyorugi Pemula U-48</h5>
+                  <p>Tryout Taekwondo KBB Zona Selatan</p>
+                </div>
+                <div class="achieve-year">2021</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FOOTER (LANTERNE "UN PROJET? LET'S TALK")
+         ======================================================================= -->
+    <footer class="footer-editorial" id="contact">
+      <div class="container">
+        
+        <div class="footer-giant-callout" data-scroll-blur>
+          <div class="footer-top-row">
+            <div class="editorial-tag">
+              <span class="g_eyebrow_marker"></span>
+              <span>Terbuka untuk Diskusi &amp; Peluang Kerja</span>
+            </div>
+            <span style="font-family: var(--font-mono); color: var(--text-muted); font-size: 0.85rem;">Bandung Barat, Indonesia</span>
+          </div>
+
+          <h2 class="footer-headline">
+            Ada Proyek<br>
+            <span>Tertentu?</span>
+          </h2>
+
+          <p style="font-size: clamp(1.1rem, 2vw, 1.5rem); color: var(--text-secondary); max-width: 620px; margin-top: 10px;">
+            Mari berdiskusi mengenai kebutuhan desain visual, editing video promosi, atau pengelolaan konten media sosial Anda.
+          </p>
+        </div>
+
+        <div class="footer-contact-cards">
+          
+          <a href="mailto:nwal.ainurrahman@gmail.com" class="contact-card-glass">
+            <div>
+              <h4>Kirim Email</h4>
+              <p>nwal.ainurrahman@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://wa.me/6285864855510" target="_blank" rel="noopener noreferrer" class="contact-card-glass">
+            <div>
+              <h4>Chat WhatsApp</h4>
+              <p>+62 858-6485-5510</p>
+            </div>
+          </a>
+
+          <div class="contact-card-glass" id="footerCvCard" role="button" tabindex="0" aria-label="Buka ringkasan Curriculum Vitae" style="cursor: pointer;">
+            <div>
+              <h4>Curriculum Vitae</h4>
+              <p>Lihat &amp; Simpan Ringkasan CV</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>
+            © 2026 Nawal Ai Nurrahman. Portofolio Desain Multimedia &amp; Konten Kreator.
+          </div>
+          <div style="display: flex; gap: 20px;">
+            <a href="#hero" style="color: inherit; text-decoration: none;">Kembali ke Atas ↑</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+
+  <!-- =======================================================================
+       PROJECT DETAIL CASE STUDY MODAL
+       ======================================================================= -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" type="button" aria-label="Tutup modal studi kasus">✕</button>
+      <div class="modal-body" id="modalContent">
+        <!-- Dynamically populated via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       2D ANIMATION VIDEO PLAYER MODAL
+       ======================================================================= -->
+  <div class="modal-backdrop" id="videoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+    <div class="modal-container" style="max-width: 860px;">
+      <button class="modal-close-btn" id="videoModalCloseBtn" type="button" aria-label="Tutup pemutar video">✕</button>
+      <div class="modal-body" style="padding: 24px;">
+        <h3 id="videoModalTitle" style="font-size: 1.5rem; margin-bottom: 16px;">Judul Animasi</h3>
+        <div style="border-radius: var(--radius-md); overflow: hidden; background: #000; border: 1px solid var(--glass-border); aspect-ratio: 16 / 9;">
+          <video id="modalVideoPlayer" controls playsinline style="width: 100%; height: 100%; object-fit: contain;"></video>
+        </div>
+        <div style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent);">Politeknik HAS: Praktik Animasi 2D</span>
+          <button class="btn-glass-pill" id="closeVideoModalActionBtn" type="button">Selesai Menonton</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       CURRICULUM VITAE (CV) DIGITAL & PRINT VIEWER MODAL
+       ======================================================================= -->
+  <div class="modal-backdrop" id="cvModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cvModalName">
+    <div class="modal-container" style="max-width: 900px;">
+      <button class="modal-close-btn" id="cvModalCloseBtn" type="button" aria-label="Tutup modal CV">✕</button>
+      
+      <div class="cv-view-wrapper">
+        <div class="cv-header-block">
+          <div>
+            <h2 id="cvModalName">NAWAL AI NURRAHMAN</h2>
+            <p>Bandung Barat, Indonesia | +62 858-6485-5510 | nwal.ainurrahman@gmail.com</p>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn-glass-pill" type="button" onclick="window.print()">Cetak / Simpan PDF</button>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <div class="cv-section-title">PROFIL</div>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-secondary);">
+            Mahasiswa D4 Teknologi Rekayasa Multimedia Grafis di Politeknik Haji Anwar Sanusi dengan minat pada desain grafis, editing video, dan konten media sosial. Memiliki pengalaman dalam pengelolaan media sosial, pembuatan konten, branding, serta editing video untuk kebutuhan promosi digital. Aktif dalam organisasi dan berbagai proyek kreatif, serta terbiasa bekerja secara komunikatif, kolaboratif, dan bertanggung jawab.
+          </p>
+        </div>
+
+        <div class="cv-section">
+          <div class="cv-section-title">PENDIDIKAN</div>
+          <div style="margin-bottom: 12px;">
+            <strong style="color: var(--text-primary);">Politeknik Haji Anwar Sanusi</strong>: D4 Teknologi Rekayasa Multimedia Grafis (2024 - Sekarang)
+          </div>
+          <div>
+            <strong style="color: var(--text-primary);">SMAS Harapan Cipongkor</strong> (2019 - 2022)
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <div class="cv-section-title">PENGALAMAN MAGANG &amp; PROYEK</div>
+          <div style="margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; color: var(--text-primary); flex-wrap: wrap; gap: 6px;">
+              <span>PT Alfahira Mediana Sentosa: Intern, Social Media &amp; Content</span>
+              <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent);">Agustus 2026 - September 2026</span>
+            </div>
+            <ul style="margin-left: 20px; font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px;">
+              <li>Mengelola akun media sosial kursus bahasa untuk kebutuhan branding dan interaksi audiens.</li>
+              <li>Mengelola akun TikTok untuk pemasaran affiliate dan pengenalan program.</li>
+              <li>Melakukan editing video iklan dan konten promosi digital/fundraising.</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; color: var(--text-primary); flex-wrap: wrap; gap: 6px;">
+              <span>Pengembangan Desa Wisata Cilanang, KBB: Ketua Tim Promosi</span>
+              <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent);">Juli - Agustus 2025</span>
+            </div>
+            <ul style="margin-left: 20px; font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px;">
+              <li>Memimpin tim promosi dalam mendukung pengembangan dan branding UMKM desa wisata.</li>
+              <li>Membuat desain media promosi seperti stiker label kemasan dan spanduk UMKM.</li>
+              <li>Membuat dan mengedit video dokumentasi kegiatan desa wisata.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <div class="cv-section-title">PENGALAMAN ORGANISASI</div>
+          <div style="margin-bottom: 12px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 600; color: var(--text-primary); flex-wrap: wrap; gap: 6px;">
+              <span>BEM Politeknik Haji Anwar Sanusi: Sekretaris Umum</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">2025 - 2026</span>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 2px;">
+              Mengelola administrasi surat-menyurat, pengarsipan organisasi, notulen rapat, serta koordinasi antarbidang.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 600; color: var(--text-primary); flex-wrap: wrap; gap: 6px;">
+              <span>Kominfo Politeknik HAS: Tim Desain</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">2025 - 2026</span>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 2px;">
+              Mendesain poster publikasi digital, Instagram feed &amp; story, dan aset visual kegiatan kampus.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 12px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 600; color: var(--text-primary); flex-wrap: wrap; gap: 6px;">
+              <span>OSIS SMAS Harapan Cipongkor: Ketua OSIS</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">2021 - 2022</span>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 2px;">
+              Memimpin kepengurusan OSIS, mengoordinasikan kegiatan siswa, dan menyusun program kerja sekolah.
+            </p>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-weight: 600; color: var(--text-primary); flex-wrap: wrap; gap: 6px;">
+              <span>Club Taekwondo Cipongkor: Asisten Pelatih</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">2019 - Sekarang</span>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 2px;">
+              Melatih teknik dasar anggota, membantu sesi latihan rutin, dan mendampingi atlet dalam kejuaraan.
+            </p>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <div class="cv-section-title">KETERAMPILAN</div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            <strong>Desain Grafis:</strong> Figma, Adobe Photoshop, CorelDRAW, Canva<br>
+            <strong>Video Editing:</strong> Adobe Premiere Pro, CapCut, Animasi 2D Frame-by-Frame<br>
+            <strong>Fotografi:</strong> Komposisi, Pencahayaan, DSLR/HP, Adobe Lightroom<br>
+            <strong>Multimedia &amp; Administrasi:</strong> Pengelolaan aset media, ekspor file, Microsoft Office, Google Workspace
+          </p>
+        </div>
+
+        <div class="cv-section">
+          <div class="cv-section-title">PRESTASI TAEKWONDO</div>
+          <ul style="margin-left: 20px; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            <li><strong>Juara 1 Ganda Campuran</strong>: Pekan Olahraga Mahasiswa Poltekhas (2025)</li>
+            <li><strong>Juara 2 Senior Putri U-46</strong>: Surya Arena Cup 1 (2024)</li>
+            <li><strong>Juara 3 Senior Individu Putri</strong>: Piala Bupati Bandung Barat (2023)</li>
+            <li><strong>Juara 1 Individu Pemula Putri</strong>: Piala Ketua Pengcab TI KBB (2022)</li>
+            <li><strong>Juara 1 Kyorugi Pemula U-48</strong>: Tryout Taekwondo KBB Zona Selatan (2021)</li>
+          </ul>
+        </div>
+
+        <div style="text-align: right; margin-top: 30px;">
+          <button class="btn-glass-pill" id="closeCvModalActionBtn" type="button">Tutup CV</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP Animation Engine (CDN with safe fallback in main.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  
+  <!-- Main Application Logic -->
+  <script src="main.js"></script>
+</body>
+</html>

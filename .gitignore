@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build output
+dist/
+build/
+
+# Local Environment & Agent customizations
+.env
+.env.local
+.env.*.local
+.agents/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs & Temporary debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+*.tmp
+dom.html
+screenshot.png
+test_screenshot.png
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Raw archives and backup duplicates (active assets are cleanly in assets/)
+porto/
+Profil .png
+*.docx

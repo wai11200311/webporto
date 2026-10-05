@@ -53,6 +53,17 @@
     </div>
   </div>
 
+  <script>
+    // Fail-safe auto-dismiss: guarantees welcome screen never blocks deployed pages
+    setTimeout(function() {
+      var ws = document.getElementById('welcomeScreen');
+      if (ws) {
+        ws.classList.add('is-loaded');
+        setTimeout(function() { ws.style.display = 'none'; }, 500);
+      }
+    }, 600);
+  </script>
+
   <!-- Custom Magnetic Cursor (Non-touch devices) -->
   <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
   <div class="custom-cursor-dot" id="cursorDot" aria-hidden="true"></div>

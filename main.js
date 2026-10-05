@@ -3,7 +3,7 @@
  * Editorial Asymmetric Grid, Accessibility Focus Management, Theme System
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+function initPortfolio() {
 
   let lastFocusedTrigger = null;
 
@@ -671,4 +671,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-});
+}
+
+// Safe execution guard: runs immediately if DOM is already ready (e.g. deployed environments)
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPortfolio);
+} else {
+  initPortfolio();
+}
